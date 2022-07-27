@@ -2,9 +2,10 @@
 
 # Create file as argument
 argon_create_file() {
-	if [ -f $1 ]; then
+	if{ 
+		[ -f $1 ]; then
 		rm $1
-	fi
+	}fi
 	touch $1
 	chmod 666 $1
 }
